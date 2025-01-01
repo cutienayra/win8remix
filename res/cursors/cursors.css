@@ -1,0 +1,75 @@
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+/* Cursor CSS */
+
+:root {
+  
+  --c-1: url(n.png), url(n.png), default;
+  --c-2: url(l.png), url(l.png), default;
+  --c-3: url(d.png), url(d.png), default;
+}
+
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+
+/* Normal Cursors */
+
+html, body, 
+.title-bar-controls button, 
+ul[role], bar>button, 
+.cgr-1, .cgr-2, .cgr-3, .cgr-4, .cgr-5, 
+div.st-mnu>.p1>button, 
+div.img-mnu>.sub>.btns>.m-btns>button#bk, 
+div.img-mnu>.sub>.btns>.m-btns>button#fw {
+cursor: var(--c-1);
+}
+
+/* Selector Cursors */
+
+app-btns > button.App, 
+div.downloader-pad table[order] > thead > tr > th, td a:hover, 
+td a:active, .view>.p2>.item, 
+.listbox > .item, 
+.setting-footer > .c-btn > rd, 
+app-btns > button, 
+button.r-down[type='enabled'],
+button.s-down[type='enabled'], 
+button.l-down[type='enabled'], 
+button.c-down[type='enabled'], 
+.view>.p3>.item, 
+.view>.p3>.cat-marker>footer.c-btn > rd, 
+.dialog-box>.item, 
+.dialog-box>div[a=""][type="mp"]>.item[type="play"], 
+.view.mai-mnu>.p2>.item:hover, .view.mai-mnu>.p2>.item, 
+.view.mai-mnu>.p2>.item>.title, 
+.view.mai-mnu>.p2>.item>a.shortlink, 
+p2#backHome, div.logon-d>d>button#login, 
+.logon-a>d>div>button, button#logon-button, 
+div.st-mnu>.p2>button, div.st-mnu>div.btns>button, 
+bar>button, footer.file-footer>button#search, .file-footer>input.textbox, 
+.file-footer>.btns>button, a, 
+div.img-mnu>.sub>.btns>button#wallApply {
+cursor: var(--c-2);
+}
+
+/* Disabled Cursors */
+
+button.r-down[type='disabled'],
+button.s-down[type='disabled'],
+button.l-down[type='disabled'],
+button.c-down[type='disabled'],
+.dialog-box>div[a=""][type="mp"]>.item[type="play"][action="disabled"],
+div.logon-d>d>button#login.disabled,
+.file-footer>.btns>button.forw.disabled,
+.file-footer>.btns>button.forw.disabled:hover, 
+.file-footer>.btns>button.forw.disabled:active,
+.file-footer>.btns>button.back.disabled,
+.file-footer>.btns>button.back.disabled:hover, 
+.file-footer>.btns>button.back.disabled:active,
+footer.file-footer>button.search.disabled,
+footer.file-footer>button.search.disabled:hover,
+footer.file-footer>button.search.disabled:active,
+.file-footer>input.textbox.disabled {
+cursor: var(--c-3);
+}
+
+/* End of Page for Cursor CSS */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
