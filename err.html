@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>BSOD</title>
+    <style>
+body {
+cursor: none;
+background: #000088;
+}
+@font-face {
+font-family: "LCR";
+src: url(/fonts/LCR.ttf) format("truetype");
+}
+p {
+font-family: LCR;
+font-weight: 400;
+font-size: 18px;
+color: #fff;
+width: 75%;
+margin-left: 15px;
+margin-top: 15px;
+}
+.blinky {
+animation: 1s linear infinite condemned_blink_effect;
+}
+@keyframes condemned_blink_effect {
+      0% {
+      visibility: hidden;
+      }
+      50% {
+      visibility: hidden;
+      }
+      100% {
+      visibility: visible;
+      }
+}
+    </style>
+    <script>
+      document.addEventListener("contextmenu", (event) => {
+         event.preventDefault();
+      });
+    </script>
+  </head>
+  <body>
+    <p>A problem has been detected and Windows has been shut down to prevent damage to your computer.
+<br><br>
+CSS_FAILURE_WINDOW
+<br><br>
+If this is the first time you've seen this error screen, restart your computer. If this screen appears again, follow these steps:
+<br><br>
+Check to make sure any new hardware or software is properly installed. If this is a new installation, ask your hardware or software manufacturer for any Windows updates you might need.
+<br><br>
+If problems continue, disable or remove any newly installed hardware or software. Disable BIOS memory options such as caching or shadowing.
+<br><br>
+Technical Information:
+<br><br>
+*** STOP: 0x0000007G (0x80F256D0, 0x0000002c, 0x00000001, 0x0000001)<v class="blinky">_</v><br>
+</p>
+  </body>
+</html>

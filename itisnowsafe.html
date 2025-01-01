@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>ㅤ</title>
+    <style>
+      html {
+        background:black;
+        cursor: none;
+      }
+      body {
+        color:white;
+        font-family: Segoe UI Light;
+        cursor: none!important;
+      }
+      button {
+        color:white;
+        background:black;
+        border:1px white solid;
+        display: none!important;
+      }
+      h1 {
+        font-weight: normal;
+      }
+    </style>
+    <script>
+      document.addEventListener("keydown", event => {
+  if (event.isComposing || event.key == '@') {
+    fn();
+  }
+});
+
+    function fn() {
+      location.href='/'; // this was the onclick
+    }
+    </script>
+    <link rel="stylesheet" href="../ui.css"/>
+  </head>
+  <body>
+    <center style="padding-top: 15rem">
+      <h1>It is now safe to turn off your computer</h1>
+    </center>
+  </body>
+</html>

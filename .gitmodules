@@ -1,0 +1,6 @@
+[submodule "apps/terminal"]
+	path = apps/terminal
+	url = https://gitea.usernamee.duckdns.org/win8remix/terminal
+[submodule "apps/dosbox"]
+	path = apps/dosbox
+	url = https://gitea.usernamee.duckdns.org/win8remix/dosbox

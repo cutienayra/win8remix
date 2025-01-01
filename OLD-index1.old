@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Loading Windows 8 Remix</title>
+      <meta property="og:title" content="Windows 8 Remix">
+  <meta property="og:description" content="A another side project from Strow that remixes Windows 8, Server 2012, and 11 (including some elements from Mac OS :O) to make a hybrid!">
+  <meta property="og:image" content="https://cdn.fentech.repl.co/strow/files/favicon.ico">
+    <script src="../lib/long.js"></script>
+    <link rel="stylesheet" href="../2-ui.css"/>
+    <link rel="stylesheet" href="../ui.css"/>
+    <style>
+      html, body {
+        background: black;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        border: hidden;
+        cursor: none!important;
+        color: white;
+        font-family: monospace;
+      }
+      .blinky {
+  animation: 1s linear infinite condemned_blink_effect;
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="sys">Strow's Sys (part of Fen Tech Co.) 2022-2023<br>System Memory 1536MB<br>BIOS Checked <b>OK</b><br>Starting Operating System from Parent Drive (C:\)...<span class="blinky">_</span></div>
+    <script>
+      /*if (localStorage.getItem('fastboot')) location.href='/';
+      setTimeout(()=>{
+      location.href='../win-boot.html';
+    },7500);*/
+    </script>
+    <!--<script src="../sys.js"></script>-->
+  </body>
+</html>
