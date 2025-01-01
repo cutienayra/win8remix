@@ -1,4 +1,4 @@
-importScripts("/lib/vendor/browserfs.min.js");
+importScripts("../win8remix/lib/vendor/browserfs.min.js");
 // Code copied from https://github.com/broofa/mime
 const mimeTypesRaw = {
   // Custom types
