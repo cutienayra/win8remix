@@ -55,5 +55,5 @@ setTimeout(()=>{
     },9500);
 
  setTimeout(()=>{
-  window.location = "win.html";
+  window.location = "../win8remix/win.html";
     },14000);
