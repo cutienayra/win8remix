@@ -1,0 +1,1583 @@
+/* UI 2 for Windows 8 Remix */
+
+bar>button>span {
+    display: none;
+}
+
+/* Root */
+
+:root {
+  --br: brightness(85%);
+  --br2: brightness(75%);
+}
+
+/* Wallpapers Section */
+
+.view[type="walls"] {
+    height: auto;
+}
+
+/* Wallpaper Icons */
+
+.view>.p3>.item#wall1, .view>.p3>.item#wall2, .view>.p3>.item#wall3, .view>.p3>.item#wall4, .view>.p3>.item#wall5, .view>.p3>.item#wall6, .view>.p3>.item#wall7, .view>.p3>.item#wall8 {
+    max-height: none;
+    height: auto;
+}
+
+.view>.p3>.item#wall1>.icon, .view>.p3>.item#wall2>.icon, .view>.p3>.item#wall3>.icon, .view>.p3>.item#wall4>.icon, .view>.p3>.item#wall5>.icon, .view>.p3>.item#wall6>.icon, .view>.p3>.item#wall7>.icon, .view>.p3>.item#wall8>.icon {
+    height: 58px;
+    margin-bottom: 0;
+}
+
+/* Top Bar */
+
+bar {
+    overflow-y: hidden;
+    width: 100%;
+    height: 44.9px;
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    border-top: solid 0.5px #000000;
+    z-index: 100000000000000000;
+    font-family: Segoe UI;
+}
+
+bar>button {
+    background-color: transparent;
+    border: hidden;
+    font-family: Segoe UI;
+    width: auto;
+    display: flex;
+    color: white;
+    height: auto;
+}
+
+bar>button>div.icon {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+/* Shutdown Options Button (eg. Icon) */
+
+bar>button[type="shutdown-opt"] {
+    border-right: solid 0.5px #ffffff;
+}
+
+bar>button[type="shutdown-opt"]>div.icon {
+    background-image: url(../res/icons/shutdown.png);
+}
+
+/* Settings Button (Eg. Icon) */
+
+bar>button[type="settings-opt"] {
+    border-right: solid 0.5px #ffffff;
+}
+
+bar>button[type="settings-opt"]>div.icon {
+    background-image: url(/apps/settings/icon.ico);
+}
+
+/* Start Button */
+
+bar>button[type="start"] {
+    border-right: solid 0.5px #ffffff;
+}
+
+/* */
+
+bar>button[type="start"]>div.icon {
+    background-image: url(../favicon.ico);
+    margin-left: 1.75px;
+    margin-right: 2.75px;
+    margin-top: 5.15px;
+    margin-bottom: auto;
+}
+
+bar>button[type="start"]>span {
+    margin-left: 4.5px;
+    margin-top: 7.5px;
+    margin-bottom: auto;
+    font-size: 18px;
+    font-family: Segoe UI Light;
+    display: block;
+}
+
+/* */
+
+bar>button:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+bar>button:active {
+    background-color: rgba(0, 0, 0, 0.70);
+}
+
+/* */
+
+bar.glass,
+.st-mnu.glass10 {
+    background: rgba(0, 0, 0,0.15);
+}
+
+.st-mnu.glass,
+.st-mnu.glass10 {
+    background: rgba(0, 0, 0,0.35);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    -o-backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    -ms-backdrop-filter: blur(4px);
+    -apple-backdrop-filter: blur(4px);
+}
+
+/** **/
+
+bar.frosted,
+.st-mnu.frosted {
+    background: rgba(212, 212, 212, 0.50);
+}
+
+/* Personalize Stuff */
+
+/* Backgrounds */
+
+.bag-1 {
+  background: center / cover no-repeat url(../res/wallpaper/beach.jpeg);
+}
+
+/* */
+
+.bag-2 {
+  background: center / cover no-repeat url(../res/wallpaper/grass.jpg);
+}
+
+/* */
+
+.bag-3 {
+  background: center / cover no-repeat url(../res/wallpaper/sunset.jpg);
+}
+
+/* */
+
+.bag-4 {
+  background: center / cover no-repeat url(../res/wallpaper/ldn_eye.jpg);
+}
+
+/* */
+
+.bag-5 {
+  background: center / contain no-repeat url(../res/wallpaper/tam.png) #b688fe;
+}
+
+/* */
+
+.bag-6 {
+  background: center / cover no-repeat url(../res/wallpaper/jfbm.jpg);
+}
+
+/* */
+
+.bag-7 {
+  background: center / cover no-repeat url(../res/wallpaper/beta-8.png);
+}
+
+/* */
+
+.bag-8 {
+  background: center / cover no-repeat url(../res/wallpaper/forest.png);
+}
+
+/* */
+
+.bag-9 {
+    background: center / cover no-repeat url(../res/wallpaper/sunny-city.png);
+}
+
+/* */
+
+.bag-10 {
+    background: center / cover no-repeat url(../res/wallpaper/rckywfl.jpeg);
+}
+
+/* */
+
+.bag-11 {
+    background: center / cover no-repeat url(../res/wallpaper/meadow.jpeg);
+}
+
+/* */
+
+.bag-999 {
+  background: #444;
+}
+
+/* ** \/ Themes \/ ** */
+
+/* Aero Theme (Default Theme for Windows 8 Remix) */
+
+/** Windows 10 Basic Style **/
+
+.basic-10 {
+  background: #1883d7;
+}
+
+/** Windows 8 Basic Style **/
+
+.basic-81-th {
+  background: #c09670;
+}
+
+/** Purple Basic Style **/
+
+.basic-purple {
+  background: purple;
+}
+
+/** Server 2012 Basic Style **/
+
+.basic-2012 {
+    background: #66cbea;
+}
+
+/*** Glass Styles ***/
+
+/** Aero Glass Style and Orignal Aero Glass Style **/
+
+.glass,
+.glass10,
+.winxp-theme {
+  background: rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  -o-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  -ms-backdrop-filter: blur(4px);
+  -apple-backdrop-filter: blur(4px);
+}
+
+/** Purple Glass Style **/
+
+.purple {
+  background-color: rgba(128, 0, 128, 0.35);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  -o-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  -ms-backdrop-filter: blur(4px);
+  -apple-backdrop-filter: blur(4px);
+}
+
+.window.purple > .title-bar > .title-bar-text,
+.window.basic-purple > .title-bar > .title-bar-text,bar.purple > .taskbar-clock {
+  color:white;
+}
+
+/** Frosted Glass Style **/
+
+.frosted {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  -o-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  -ms-backdrop-filter: blur(4px);
+  -apple-backdrop-filter: blur(4px);
+}
+
+/** Red Glass Style **/
+
+.red {
+  background-color: rgba(255, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  -o-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  -ms-backdrop-filter: blur(4px);
+  -apple-backdrop-filter: blur(4px);
+}
+
+/* Old Aero Glass */
+
+.window.glass10>.title-bar>.title-bar-controls>button {
+    top: -0.2px;
+    height: 35px;
+    background-position: center;
+    background-size: 16px;
+    width: 45px;
+    background-color: transparent;
+    border: hidden!important
+}
+.window.glass10>.title-bar>.title-bar-controls>button[aria-label="Close"] {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAAXNSR0IArs4c6QAAAD9JREFUKFNjZCABMELV/kfSAxMDCaGI45RAVwjSiawY3SSYZXA16IoxrEb2EkWKkT2E1xnoIYIRQmQHHcHoAQC9YwwLLAGFzQAAAABJRU5ErkJggg==);
+}
+.window.glass10>.title-bar>.title-bar-controls>button:hover {
+   background-color: rgba(255, 255, 255, 0.25)!important;
+}
+.window.glass10>.title-bar>.title-bar-controls>button:active {
+   background-color: rgba(255, 255, 255, 0.50)!important;
+}
+
+/* /\/\/\/\ */
+
+bar>button.selected[type="start"], bar>button.selected[type="start"]:hover, bar>button.selected[type="start"]:active {
+    background-color: rgba(0, 0, 0, 0.35)!important;
+}
+
+/* Start menu */
+
+div.st-mnu {
+    overflow-y: hidden;
+    width: 385px;
+    height: 385px;
+    display: flex;
+    bottom: 45px;
+    position: fixed;
+    border-top: solid 0.5px #000000;
+    border-right: solid 0.5px #000000;
+    z-index: 100000000000000000;
+    font-family: Segoe UI;
+}
+
+div.st-mnu>div.p2 {
+    border: solid 0.5px #ffffff;
+    width: 48.15%;
+    height: 84.5%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 2.5px;
+    margin-left: 1.5px;
+}
+div.st-mnu>div.p1 {
+    border: solid 0px;
+    width: 45%;
+    height: auto;
+    margin-top: 16px;
+    margin-left: 5.5px;
+    margin-right: 4.5px;
+    overflow: hidden;
+}
+
+div.st-mnu>div.btns {
+    border: solid 0.5px transparent;
+    display: flex;
+    height: 37px;
+    width: 50%;
+    bottom: 5px;
+    right: 7.5px;
+    position: absolute;
+}
+
+div.st-mnu>.btns>button.shutdown-opt {
+    width: 100%;
+    border: solid 0.5px #ffffff;
+    background-color: transparent;
+    margin-left: 5px;
+}
+
+div.st-mnu>.btns>button.logoff-opt {
+    width: 100%;
+    border: solid 0.5px #ffffff;
+    margin-left: 15px;
+    background-color: transparent;
+}
+
+div.st-mnu>.btns>button>span {
+    font-family: Segoe UI;
+    font-size: 105%;
+}
+
+div.st-mnu>.p1>button:hover,
+div.st-mnu>.p2>button:hover,
+div.st-mnu>.btns>button:hover {
+    border: solid 0.5px #e0e0e0;
+    color: #e0e0e0;
+}
+
+div.st-mnu>.p1>button:active,
+div.st-mnu>.p2>button:active,
+div.st-mnu>.btns>button:active {
+    border: solid 0.5px #b5b5b5;
+    color: #b5b5b5
+}
+
+div.st-mnu>.btns>button {
+    color: white;
+}
+
+div.st-mnu>.p1>button {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border: solid 0.5px #ffffff;
+    background-color: transparent;
+    margin-bottom: 5px;
+    color: white;
+    padding: 15px;
+    display: flex;
+}
+div.st-mnu>.p1>button>span {
+    font-family: Segoe UI Light;
+    font-size: 125%;
+    display: block;
+    margin: auto;
+    margin-left: 5px;
+}
+
+div.st-mnu>.p1>button.app1>div.icon {
+    background-image: url(/apps/settings/icon.ico);
+}
+div.st-mnu>.p1>button.app2>div.icon {
+    background-image: url(../res/icons/152.png);
+}
+div.st-mnu>.p1>button.app3>div.icon {
+    background-image: url(../res/icons/shutdown.png);
+}
+div.st-mnu>.p1>button>div.icon {
+    width: 37px;
+    height: 37px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+    margin-right: 0;
+}
+
+/* P2 Buttons */
+
+div.st-mnu>.p2>button {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border: solid 0.5px #ffffff;
+    background-color: transparent;
+    margin-bottom: 2.5px;
+    color: white;
+    padding: 15px;
+    display: flex;
+}
+
+div.st-mnu>.p2>button>span {
+    font-family: Segoe UI;
+    font-size: 115%;
+    display: block;
+    margin: auto;
+    margin-left: 5px;
+}
+
+div.st-mnu>.p2>button>div.icon {
+    width: 32.5px;
+    height: 32.5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+    margin-right: 5;
+}
+
+div.st-mnu>.p2>button.app1>div.icon {
+    background-image: url("/apps/eventviewer/icon.png");
+}
+
+/* Login Menu (Experimental) */
+
+.logon-window {
+    width: 100%!important;
+    left: 0px!important;
+    top: 0px!important;
+    height: 100%!important;
+    resize: none;
+    position: fixed;
+    background-color: transparent;
+    animation: FadeIn 0.10s;
+    z-index: 10000000000!important;
+}
+
+.logon-window>.window-body {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.shutdown-btns {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+button#logon-button {
+    box-sizing: border-box;
+    min-width: 70px;
+    min-height: 70px;
+    text-align: center;
+    border: hidden;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../res/shut.png);
+    background-color: transparent;
+}
+button#logon-button:hover {
+    background-color: #747474;
+}
+button#logon-button:active {
+    background-color: #818181;
+}
+
+.logon-a, .logon-b {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+div.logon-a>d>div>button>div.icon, div.logon-b>div.icon, div.logon-d>div.icon {
+    background: center / cover no-repeat url(../res/defaultUser.png);
+    border: solid #686868 0.25px;
+    width: 218px;
+    height: 218px;
+}
+
+div.logon-b>div.username {
+    width: auto;
+    height: 218px;
+    vertical-align: middle;
+    color: white;
+}
+
+div.logon-b>div.username>h1 {
+    font-size: 2.5em;
+    font-family: Segoe UI Light;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-weight: 100;
+}
+
+div.logon-b>div.username>p {
+    font-size: 1.25em;
+    margin-left: 15px;
+    font-family: Segoe UI;
+    margin-top: 0px;
+}
+
+div.logon-b>div.username>p:before {
+    content: ' ';
+    background: center / contain no-repeat url('../res/dots.gif');
+    height: 1.25em;
+    width: 1.25em;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.logon-a>d>div>button {
+    width: auto;
+    margin: 0;
+    background: transparent;
+    transition: fadeOut 1s;
+}
+.logon-a>d>div>button:hover {
+    filter: var(--br);
+    -webkit-filter: var(--br);
+    -o-filter: var(--br);
+    -ms-filter: var(--br);
+    -moz-filter: var(--br);
+}
+.logon-a>d>div>button:active {
+    filter: var(--br2);
+    -webkit-filter: var(--br2);
+    -o-filter: var(--br2);
+    -ms-filter: var(--br2);
+    -moz-filter: var(--br2);
+}
+
+.logon-a>d>div>button>p {
+    text-align: left;
+    font-size: 1.75em;
+    color: white;
+    font-family: Segoe UI;
+    padding: 0;
+    margin: 10px 0px 0px 7.5px;
+}
+
+#user1 > .add {
+    background: center / contain no-repeat url(../res/addUser.png);
+    border: solid #686868 0.25px;
+    width: 218px;
+    height: 218px;
+}
+
+.logon-a>d>h1 {margin: 0px 0px 5px 5px;font-size: 2em;font-family: Segoe UI Light;font-weight: 500;color: white;text-decoration: underline 1px;}
+
+.logon-window>.window-body>.window-body-filler {
+    border-top: solid rgb(0, 0, 0) 1px;
+    background-color: transparent;
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+/* Shutdown Dialog for Logon Window */
+
+.shutdown-dialog {
+    position: absolute;
+    right: 25px;
+    bottom: 125px;
+    width: 185px;
+    height: auto;
+    border: black solid 0.75px;
+    background-color: white;
+}
+
+.shutdown-dialog>button {
+    width: 100%!important;
+    height: auto;
+    border-radius: 0!important;
+    border: solid 0.75px transparent;
+    padding: 15px;
+    margin-top: 0px!important;
+    margin-bottom: -1px!important;
+}
+
+.shutdown-dialog>button.shut:hover {
+    border-bottom: solid 0.75px black;
+    border-left: solid 0.75px transparent;
+    border-right: solid 0.75px transparent;
+}
+.shutdown-dialog>button.rest:hover {
+    border-top: solid 0.75px black;
+    border-left: solid 0.75px transparent;
+    border-right: solid 0.75px transparent;
+    
+}
+.shutdown-dialog>button.shut:active {
+    border-bottom: solid 0.75px black;
+    border-left: solid 0.75px transparent;
+    border-right: solid 0.75px transparent;
+    background: #b6b6b6;
+}
+.shutdown-dialog>button.rest:active {
+    border-top: solid 0.75px black;
+    border-left: solid 0.75px transparent;
+    border-right: solid 0.75px transparent;
+    background: #b6b6b6;
+}
+.shutdown-dialog>button.shut:hover,
+.shutdown-dialog>button.shut:active,
+.shutdown-dialog>button.rest:hover,
+.shutdown-dialog>button.rest:active {
+  text-decoration: underline solid 0.75px #000;
+}
+
+.logon-a, .logon-c, .logon-d {
+  top: 75px;
+  position: absolute;
+  height: 87.5%;
+}
+
+/* Fix for User Buttons on Logon Page *.* */
+
+.logon-a>d>div>button#user1 {
+  border: solid 0.75px transparent;
+}
+
+.shutdown-dialog>button>p {
+  font-family: Segoe UI Light!important;
+  font-size: 24px!important;
+  text-align: left!important;
+  font-weight: normal!important;
+  color: black!important;
+  margin: 0px!important;
+}
+
+/* Metro User Login (Other Users) */
+
+.logon-d {
+    position: absolute;
+    left: 50%;
+}
+
+.logon-d>d>h1 {
+    margin: 0px 0px 5px 0px;
+    font-size: 2em;
+    font-family: Segoe UI Light;
+    font-weight: 500;
+    color: white;
+    text-decoration: underline 1px;
+}
+
+.logon-d>d>div.field-row {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: Segoe UI;
+    color: white;
+    width: 100%;
+    height: 24px;
+    align-items: center;
+    display: flex;
+}
+
+div.logon-d>d>div.field-row>label[for="boxun"], div.logon-d>d>div.field-row>label[for="boxpw"] {
+    text-align: center;
+    width: auto;
+    margin: 0;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+div.logon-d>d>div.field-row>label[for="boxun"]#u:after {
+    content: 'Username:';
+}
+div.logon-d>d {
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    display: block;
+}
+
+div.logon-d>d>div.field-row>input#boxun, div.logon-d>d>div.field-row>input#boxpw {
+    height: 100%;
+    border: black solid 0.5px;
+    font-family: Segoe UI;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+div.logon-d>div.icon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-right: 10px;
+    position: absolute;
+    margin-left: -238px;
+}
+
+div.logon-d>d>div.field-row>label[for="boxpw"]#p:after {
+    content: 'Password:';
+}
+
+div.logon-d>d>div.field-row>input#boxpw {
+    margin-left: 10.5px;
+}
+
+div.logon-d>d>button#login {
+    background: white;
+    border: 0.75px solid #b8b8b8;
+    border-radius: 1px;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: Segoe UI;
+    font-size: 15px;
+    padding: 6.5px;
+    min-width: 80px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 2.5px;
+}
+div.logon-d>d>button#login.disabled {
+    background: #878787;
+    border: 0.75px solid #4f4f4f;
+    border-radius: 1px;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: Segoe UI;
+    font-size: 15px;
+    padding: 6.5px;
+    min-width: 80px;
+    text-align: center;
+}
+
+div.logon-d>d>button#login.enabled:hover {
+    -webkit-filter: brightness(85%);
+    -o-filter: brightness(85%);
+    -ms-filter: brightness(85%);
+    -moz-filter: brightness(85%);
+    filter: brightness(85%);
+}
+div.logon-d>d>button#login.enabled:active {
+    -webkit-filter: brightness(70%);
+    -o-filter: brightness(70%);
+    -ms-filter: brightness(70%);
+    -moz-filter: brightness(70%);
+    filter: brightness(70%);
+}
+
+/* Main */
+
+p2#backHome {
+    text-align: right;
+    width: 18px;
+    position: absolute;
+    right: 12.5px;
+    top: 45;
+    color: #ff0000;
+    font-size: 18px;
+    font-family: Segoe UI Bold;
+}
+p2#backHome:hover {
+    color: #c90000;
+}
+p2#backHome:active {
+    color: #9a0000;
+}
+
+/* New Settings Menu UI */
+
+.view.mai-mnu>.p2>.item {
+    width: 240px;
+    max-height: 100%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.view.mai-mnu>.p2>.item>a.shortlink,.view.mai-mnu>.p2>.item>div>a.shortlink {
+    letter-spacing: 0px;
+    display: inline-block;
+    font-family: Segoe UI;
+    font-size: 16px;
+    vertical-align: middle;
+    color: blue;
+}
+.view.mai-mnu>.p2>.item>a.shortlink:hover,.view.mai-mnu>.p2>.item>div>a.shortlink:hover {
+    text-decoration: underline 0.5px blue solid;
+}
+.view.mai-mnu>.p2>.item>a.shortlink:active,.view.mai-mnu>.p2>.item>div>a.shortlink:active {
+    text-decoration: underline 0.5px #01017c solid;
+    color: #01017c;
+}
+.view.mai-mnu>.p2>.item>a.shortlink.a {
+    margin-top: -27.5px;
+    margin-left: 72px;
+}
+
+.view.mai-mnu>.p2>.item>.title {
+    margin-top: -25px;
+    margin-left: 10px;
+    font-family: Segoe UI Light;
+    font-size: 20px;
+}
+.view.mai-mnu>.p2>.item>div>.title {
+  font-family: Segoe UI Light;
+  font-size: 20px;
+}
+
+.view.mai-mnu>.p2>.item.no-sub-lnk>.title {
+    margin-top: 0px;
+}
+
+.view.mai-mnu>.p2>.item.no-sub-lnk>a.shortlink {color: transparent!important;text-decoration: none!important;}
+
+.view.mai-mnu>.p2>.item#sysInfo>.icon {
+    background: center / contain no-repeat url(../res/icons/system.png);
+}
+
+.view.mai-mnu>.p2>.item#personalise>.icon {
+    background: center / contain no-repeat url(../res/icons/theme.png);
+}
+.view.mai-mnu>.p2>.item#test>.icon {
+    background: center / contain no-repeat url(../favicon.ico);
+}
+
+.view.mai-mnu>.p2>.item#cursors>.icon {
+    background: center / contain no-repeat url(../res/icons/mouse.png);
+}
+.view.mai-mnu>.p2>.item#taskbar>.icon {
+    background: center / contain no-repeat url(../res/icons/taskbar.png);
+}
+
+.view.mai-mnu {
+    display: inline-flex;
+    overflow: hidden;
+    flex-flow: wrap;
+}
+
+.view.mai-mnu>.p2 {
+    width: 50%;
+    overflow: hidden;
+}
+
+.view.mai-mnu>.cat-marker {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-family: Segoe UI;
+    padding-bottom: 0px;
+    font-size: 145%;
+    text-align: center;
+    height: auto;
+    color: blue;
+}
+
+.view.mai-mnu>.p2>.item:hover, .view.mai-mnu>.p2>.item:active {
+    background-image: linear-gradient(to top, #DDECFD, #EBF3FD)!important;
+    box-shadow: 0px 0px 0px 1px #ebf4fd!important;
+    border: 0.75px solid #B8D6FB!important;
+    border-radius: 2px!important;
+}
+
+.view.mai-mnu>.p2>.item>.title:hover {
+    text-decoration: underline solid 0.5px #000000;
+}
+.view.mai-mnu>.p2>.item>.title:active {
+    text-decoration: underline solid 0.5px #424242;
+    color: #424242;
+}
+
+/* Winver */
+
+.winver {
+    height: 388.95px;
+    background: #f0f0f0;
+    border: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.winver>div.logo {
+    width: 98%;
+    top: 40.5px;
+    height: 80.85px;
+    position: absolute;
+}
+
+div.winver>hr {
+    margin-top: 90px;
+    position: absolute;
+    width: 98%;
+}
+
+div.winver>p {
+    position: absolute;
+    top: 127.5px;
+    font-family: sans-serif;
+    margin-left: 45px;
+    width: 80%;
+    font-size: 14px;
+}
+
+.winver>p>b {
+    font-weight: bolder;
+    font-family: sans-serif!important;
+}
+
+div.winver>p>div>button {
+    position: absolute;
+    right: 0px;
+    font-family: Segoe UI;
+    border: solid 2.5px rgb(0, 99, 177);
+    padding: 5px;
+    width: 60px;
+    background: transparent;
+    float: left;
+}
+div.winver>p>div>button:hover {
+    border: solid 2.5px rgb(0 143 255);
+}
+div.winver>p>div>button:active {
+    background: #0000001a;
+    border: solid 2.5px rgb(0 143 255);
+}
+
+/** Updated File Explorer **/
+
+.view-box>table>tbody>tr {
+    display: block;
+    margin-top: 0.5px;
+    margin-bottom: 0.5px;
+}
+
+/* Navbar or Main Footer */
+
+.file-footer.fe {
+    border-top: 1.25px solid #000000;
+    border-bottom: 1.25px solid #000000;
+    border-left: hidden;
+    border-right: hidden;
+    justify-content: space-between;
+    right: 0;
+    align-items: center;
+    position: absolute;
+    width: 98.1%;
+    margin-top: -1px;
+    top: 36.9px;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 24px;
+}
+
+/* */
+
+.file-footer>input.textbox {
+    width: 83%;
+    height: 29px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 68.5px;
+    font-size: 21px;
+    font-family: Segoe UI;
+    background-color: white;
+    border: solid 0.5px black;
+    color: black;
+    position: absolute;
+    text-align: left;
+    padding-left: 2px;
+}
+
+footer.file-footer>button.search {
+    width: 33.19px;
+    height: 33.19px;
+    position: absolute;
+    right: 5.5px;
+    border: solid 0.5px black;
+    background: center / contain no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAbBJREFUSEvtlDFIHFEURc/Fxsa0FjaiYJGU6SwkggiCBLQLMSCKYK0iiIWJhSAmpBFESBUQQlpJESTETpFU6USNEIJoY6UIKXLlyV9YVnd31lkWAj4Y+DAz7/x7//tXNLjUYB4PwLo7/v9YarsFeJqeX8BPSUfVLLmXQttDwArQWQLYBEYlnZcD1wy0vQX0ARehCtgDWpPSrgTqkHR8F7QmoO0lYA74BkxKOixuansaeAvsxwYkXZZCMwNth4pT4ERSWznLbM8ku99LmsoD7Ae+ApuSnlcAPgO+AzuSuvMAXwMLwBtJsS5bth0vJd1ysBZLCwo3JI1UUBhX5Uc9FBbOMFgjkjbugtr+AIwD+c4wmtueBNYS6IWkTwWo7cfAZ+AJsA0M5prSBBwD1uN4gCbgDPgNROq0A83pykzkvoe254FF4C8Q6x6gF3iUVEYIfJT0rtJAZRoa27PAckqXXkkxFDdlO4bkj6RQW7WqAm2/jJ0DVyk9IkXuXRWBaUhWgX/AgKSItFxVFlgUZXFmw5K+5CKln6spfAXsSjqoB+wmferVKGufB2BWpzJ/13BLrwEvOY4dw15Z0gAAAABJRU5ErkJggg==) #19aaff;
+}
+footer.file-footer>button.search.enabled:hover {
+    background: center / contain no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAbBJREFUSEvtlDFIHFEURc/Fxsa0FjaiYJGU6SwkggiCBLQLMSCKYK0iiIWJhSAmpBFESBUQQlpJESTETpFU6USNEIJoY6UIKXLlyV9YVnd31lkWAj4Y+DAz7/x7//tXNLjUYB4PwLo7/v9YarsFeJqeX8BPSUfVLLmXQttDwArQWQLYBEYlnZcD1wy0vQX0ARehCtgDWpPSrgTqkHR8F7QmoO0lYA74BkxKOixuansaeAvsxwYkXZZCMwNth4pT4ERSWznLbM8ku99LmsoD7Ae+ApuSnlcAPgO+AzuSuvMAXwMLwBtJsS5bth0vJd1ysBZLCwo3JI1UUBhX5Uc9FBbOMFgjkjbugtr+AIwD+c4wmtueBNYS6IWkTwWo7cfAZ+AJsA0M5prSBBwD1uN4gCbgDPgNROq0A83pykzkvoe254FF4C8Q6x6gF3iUVEYIfJT0rtJAZRoa27PAckqXXkkxFDdlO4bkj6RQW7WqAm2/jJ0DVyk9IkXuXRWBaUhWgX/AgKSItFxVFlgUZXFmw5K+5CKln6spfAXsSjqoB+wmferVKGufB2BWpzJ/13BLrwEvOY4dw15Z0gAAAABJRU5ErkJggg==) #1590d7;
+}
+footer.file-footer>button.search.enabled:active {
+    background: center / contain no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAbBJREFUSEvtlDFIHFEURc/Fxsa0FjaiYJGU6SwkggiCBLQLMSCKYK0iiIWJhSAmpBFESBUQQlpJESTETpFU6USNEIJoY6UIKXLlyV9YVnd31lkWAj4Y+DAz7/x7//tXNLjUYB4PwLo7/v9YarsFeJqeX8BPSUfVLLmXQttDwArQWQLYBEYlnZcD1wy0vQX0ARehCtgDWpPSrgTqkHR8F7QmoO0lYA74BkxKOixuansaeAvsxwYkXZZCMwNth4pT4ERSWznLbM8ku99LmsoD7Ae+ApuSnlcAPgO+AzuSuvMAXwMLwBtJsS5bth0vJd1ysBZLCwo3JI1UUBhX5Uc9FBbOMFgjkjbugtr+AIwD+c4wmtueBNYS6IWkTwWo7cfAZ+AJsA0M5prSBBwD1uN4gCbgDPgNROq0A83pykzkvoe254FF4C8Q6x6gF3iUVEYIfJT0rtJAZRoa27PAckqXXkkxFDdlO4bkj6RQW7WqAm2/jJ0DVyk9IkXuXRWBaUhWgX/AgKSItFxVFlgUZXFmw5K+5CKln6spfAXsSjqoB+wmferVKGufB2BWpzJ/13BLrwEvOY4dw15Z0gAAAABJRU5ErkJggg==) #127ab6;
+}
+
+.file-footer>.btns {
+    height: 32px;
+    max-height: 32px;
+    margin-top: 0.85px;
+    margin-bottom: 1px;
+    padding: 0;
+}
+
+.file-footer>.btns>button {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: solid 0.5px black;
+}
+
+.file-footer>.btns>button.back {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAATVJREFUSEvt1c0qBWEYAODn5BJci4WN7FGKJD9JWUpZ2ElZ2ElZWJJEEikbF4AIuQ6JJJStvnqdhQ4zZ2bMyqzne5+Z93t/Gmp+GjV7/sFWGe/GVdGraDelAzjCCE6KoO2Ak9gJZBMzfwnOYT2AVSwUwdKZPH+4hOUAFrFSFMsDrmE+gFlslMGywC1MBzCBvbLYT2BHVOIgPjCM0yqwVmBnYL24D+yyKqwVOI7dKoGI1SzO71XahZs6wWRtYwrv6MNZlR/wUx+miZImy2ugF1WhvzV+ust0py+BVlI8WZMm9d4YntFfZkt8ZSgLTO/tYxRPgV6XSW8eMMU/iJX0GOm9LYrmBVP8wxgED4HeFUHbAVP8tHyHcI6eOsBkHEefvtUFFnGaZ9pNaSksax+WDt4qQO1/+AmD1y4d8tbSBAAAAABJRU5ErkJggg==);
+}
+
+.file-footer>.btns>button.forw {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAATpJREFUSEvt1U0rhUEUAODnLhWSSH6HEOEH2CiRRBJLCyU7CyU7CyVLJflIohT2srHwW/wE0dQh3I/3uu9778psZ+Y8nTNnZkpaPEot9vyDWRUfwXPWou/zeUo6hSvM4K5eNA94hNWAlnBaD5oHTPH3sBnQOg6y0Lxgir+F3YC2sVMLLQJM8ddwGNA+NqqhRYEp/gLOAjrGSiW0SDDFn8Q12nAbHfxW1LWoVrXRQPvxGOjr5+LfGb5ndVkD84s4byU4hJdqYAMJlG2ZwAPacYLlZp7hWGCd8fKkF+jHKLJLU7OkzLrizNLZlY2iwPRr3KMbF3EnKx5PEeBwYD24xHwzn7bBKGNvfFVzWV2XJ8OBwPrios9mYWk+D/iEcdzEa1KPlwvsiHs2XZcUi/Jk+Bfna+0/2FDZam36AIhgKB2L2fGLAAAAAElFTkSuQmCC);
+    margin-left: -1px;
+}
+.file-footer>.btns>button.back.enabled:hover,
+.file-footer>.btns>button.forw.enabled:hover {
+    background-color: #d0d0d0;
+}
+.file-footer>.btns>button.back.enabled:active,
+.file-footer>.btns>button.forw.enabled:active {
+    background-color: #a2a2a2;
+}
+
+.file-footer>.btns>button.forw.disabled,
+.file-footer>.btns>button.forw.disabled:hover, 
+.file-footer>.btns>button.forw.disabled:active,
+.file-footer>.btns>button.back.disabled,
+.file-footer>.btns>button.back.disabled:hover, 
+.file-footer>.btns>button.back.disabled:active,
+footer.file-footer>button.search.disabled,
+footer.file-footer>button.search.disabled:hover,
+footer.file-footer>button.search.disabled:active,
+.file-footer>input.textbox.disabled {
+    background-color: grey;
+}
+
+/* Status Bar */
+
+footer.status-footer {
+    width: 99.2%;
+    max-width: 99.2%;
+    height: 20px;
+    max-height: 20px;
+    bottom: 0;
+    position: absolute;
+    border-top: solid 0.5px black;
+    font-family: monospace;
+    padding-left: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+footer.file-footer.fe,
+footer.status-footer {
+  background-color: #e6e6e6;
+}
+
+footer.status-footer>b {
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+bar.build5112-theme>div.time,
+bar.build5112-aero-theme>div.time,
+bar.Vglass-theme>div.time {
+    color: white;
+    position: absolute;
+    right: 10px;
+    font-family: Segoe UI Light;
+    font-size: 16px;
+    margin-top: 2.5px;
+}
+
+bar>div.time {
+    position: absolute;
+    font-family: Segoe UI Light;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+    margin-top: 8px;
+}
+
+/* To disable users to get access to the Visual Styles button when on the Old Aero or Build 5112 Themes */
+
+.window.build5112-theme>.window-body>.window-body-filler>.view>.p3>.dialog-box>.item#visual_styles, .window.glass10>.window-body>.window-body-filler>.view>.p3>.dialog-box>.item#visual_styles, .window.build5112-theme>.window-body>.window-body-filler>div>.view#eiene, .window.build5112-theme>.window-body>.window-body-filler>div>.view#eiene#snskos, .window.build5112-theme>.window-body>.window-body-filler>div>.view#eiene#snskos#saoams, .window.glass10>.window-body>.window-body-filler>.view>.p3>.dialog-box>.item#visual_styles, .window.glass10>.window-body>.window-body-filler>div>.view#eiene, .window.glass10>.window-body>.window-body-filler>div>.view#eiene#snskos, .window.glass10>.window-body>.window-body-filler>div>.view#eiene#snskos#saoams, .window.build5112-aero-theme>.window-body>.window-body-filler>.view>.p3>.dialog-box>.item#visual_styles, .window.build5112-aero-theme>.window-body>.window-body-filler>div>.view#eiene, .window.build5112-aero-theme>.window-body>.window-body-filler>div>.view#eiene#snskos, .window.build5112-aero-theme>.window-body>.window-body-filler>div>.view#eiene#snskos#saoams, .window.winxp-theme>.window-body>.window-body-filler>.view>.p3>.dialog-box>.item#visual_styles, .window.winxp-theme>.window-body>.window-body-filler>div>.view#eiene, .window.winxp-theme>.window-body>.window-body-filler>div>.view#eiene#snskos, .window.winxp-theme>.window-body>.window-body-filler>div>.view#eiene#snskos#saoams {
+  display: none!important;
+  width: 0.1px!important;
+  height: 0.1px!important;
+  position: absolute!important;
+  right: 99999px!important;
+  top: 99999px!important;
+  opacity: 0!important;
+}
+
+.window.build5112-theme>.window-body>.window-body-filler>.view>.p3>.dialog-box,
+.window.build5112-aero-theme>.window-body>.window-body-filler>.view>.p3>.dialog-box {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.window.build5112-theme>.window-body>.window-body-filler>.view>.p3,
+.window.build5112-aero-theme>.window-body>.window-body-filler>.view>.p3 {
+    background: transparent;
+}
+
+.view.mai-mnu>.p2>div.item>div {
+    margin-left: 10px;
+}
+
+.view.mai-mnu>.p2>div.item>div.icon {
+    margin: 0px!important;
+}
+
+.view.mai-mnu>.p2>.item>div>.title:hover {
+    text-decoration: underline 0.5px solid #000;
+}
+
+.view.mai-mnu>.p2>.item>div>.title:active {
+    text-decoration: underline 0.5px solid rgb(64 64 64);
+    color: rgb(64 64 64);
+}
+
+/* Taskbar Movements */
+
+bar.up {
+    top: 0;
+}
+
+.st-mnu.up {
+    top: 45px;
+    border-top: hidden;
+    border-bottom: solid 0.5px #000;
+}
+
+.st-mnu.up.build5112-theme, .st-mnu.up.build5112-aero-theme, .st-mnu.up.winxp-theme {
+    top: 30.5px;
+    z-index: 100!important;
+    border: hidden!important;
+}
+
+/* other stuff */
+
+.window.build5112-theme>.window-body>.window-body-filler>.view>.p3>.dialog-box, .window.build5112-aero-theme>.window-body>.window-body-filler>.view>.p3>.dialog-box, .window.glass10>.window-body>.window-body-filler>.view>.p3>.dialog-box, .window.winxp-theme>.window-body>.window-body-filler>.view>.p3>.dialog-box {
+    display: none!important;
+}
+
+/* Settings Sidebar */
+
+div.view.mai-mnu>div.sidebar,
+div.sidebar {
+    width: 300px;
+    display: flex;
+    background: rgb(27 79 175 / 50%);
+    flex-direction: column;
+    border-right: solid 0.5px #000;
+}
+
+.view.mai-mnu.\31 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+div.sidebar>h1 {
+    font-family: Segoe UI Light;
+    font-weight: normal;
+    font-size: 28px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+div.sidebar>hr {
+    width: 76.5%;
+    margin: 0px 0px 10px 10px;
+    border-top: solid 0.5px #000;
+    border-bottom: hidden;
+    border-left: hidden;
+    border-right: hidden;
+}
+
+div.sidebar>a {
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgb(0 115 38);
+}
+
+div.sidebar>a:hover {
+    color: rgb(0 115 38);
+    text-decoration: solid 0.5px underline rgb(0 115 38);
+}
+
+div.sidebar>a:active {
+    color: rgb(0 69 23);
+    text-decoration: solid 0.5px underline rgb(0 69 23);
+}
+
+/* New Wallpaper Settings Menu */
+
+div.img-mnu {
+    height: 349px;
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+div.img-mnu>div.background {
+    width: 100%;
+    height: 100%;
+}
+
+div.img-mnu>div.sub {
+    width: 540px;
+    height: 120px;
+    margin: 0;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    background: center / contain repeat-x url(data:image/bmp;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAJRJREFUOE+t0qEOgzAUheHSikkkEomcnMQikUgkcnISOTk5yXu2t4ccURQYcmqapsl3/zStADyccFUAaqHnCDZqsFWDnRp8qsGXGuylYIxxkIIARimYUpoKGEJwZnb4d8782LO00MyWK9B773LOl/PO7ln4Vhd+yiTFzsJVXfhVlPGt6bDwpy78Uy6rTLp7ZuGmLNwBX3uWTw1OawAAAAAASUVORK5CYII=);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+div.img-mnu>.sub>.title-subtitle>h1 {
+    margin: 0px;
+    font-size: 36px;
+    font-family: Segoe UI Light;
+    font-weight: normal;
+    margin-top: -10px;
+}
+
+div.img-mnu>.sub>.title-subtitle {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 0px;
+    padding: 0px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: #fff;
+}
+
+div.img-mnu>.sub>.title-subtitle>p {
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+}
+
+div.img-mnu>.sub>.title-subtitle>p>b {
+    color: #44835d;
+}
+
+
+div.img-mnu>.sub>.btns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0px;
+    height: 120px;
+}
+
+div.img-mnu>.sub>.btns>button#wallApply {
+    color: #2a502f;
+    background: #6ccf78;
+    border: solid 0.5px #2a502f;
+}
+div.img-mnu>.sub>.btns>button#wallApply:hover {
+    filter: var(--br);
+    -webkit-filter: var(--br);
+    -o-filter: var(--br);
+    -ms-filter: var(--br);
+    -moz-filter: var(--br);
+}
+div.img-mnu>.sub>.btns>button#wallApply:active {
+    filter: var(--br2);
+    -webkit-filter: var(--br2);
+    -o-filter: var(--br2);
+    -ms-filter: var(--br2);
+    -moz-filter: var(--br2);
+}
+
+div.img-mnu>.sub>.btns>button {
+    padding: 10px;
+    font-family: Segoe UI;
+    border-radius: 6px;
+    font-weight: normal;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+div.img-mnu>.sub>.btns>.m-btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 0px;
+    margin-bottom: auto;
+    height: 40px;
+    justify-content: center;
+}
+
+div.img-mnu>.sub>.btns>.m-btns>button {
+    width: 40px;
+    border: solid 0.5px #000;
+    border-radius: 6px;
+}
+
+div.img-mnu>.sub>.btns>.m-btns>button#bk,
+div.img-mnu>.sub>.btns>.m-btns>button#fw {
+    border: solid 0.5px #2a4750;
+    background-color: #6cb0cf;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+div.img-mnu>.sub>.btns>.m-btns>button#bk:hover,
+div.img-mnu>.sub>.btns>.m-btns>button#fw:hover {
+    filter: var(--br);
+    -webkit-filter: var(--br);
+    -o-filter: var(--br);
+    -ms-filter: var(--br);
+    -moz-filter: var(--br);
+}
+div.img-mnu>.sub>.btns>.m-btns>button#bk:active,
+div.img-mnu>.sub>.btns>.m-btns>button#fw:active {
+    filter: var(--br2);
+    -webkit-filter: var(--br2);
+    -o-filter: var(--br2);
+    -ms-filter: var(--br2);
+    -moz-filter: var(--br2);
+}
+
+div.img-mnu>.sub>.btns>.m-btns>button#bk {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAATVJREFUSEvt1c0qBWEYAODn5BJci4WN7FGKJD9JWUpZ2ElZ2ElZWJJEEikbF4AIuQ6JJJStvnqdhQ4zZ2bMyqzne5+Z93t/Gmp+GjV7/sFWGe/GVdGraDelAzjCCE6KoO2Ak9gJZBMzfwnOYT2AVSwUwdKZPH+4hOUAFrFSFMsDrmE+gFlslMGywC1MBzCBvbLYT2BHVOIgPjCM0yqwVmBnYL24D+yyKqwVOI7dKoGI1SzO71XahZs6wWRtYwrv6MNZlR/wUx+miZImy2ugF1WhvzV+ust0py+BVlI8WZMm9d4YntFfZkt8ZSgLTO/tYxRPgV6XSW8eMMU/iJX0GOm9LYrmBVP8wxgED4HeFUHbAVP8tHyHcI6eOsBkHEefvtUFFnGaZ9pNaSksax+WDt4qQO1/+AmD1y4d8tbSBAAAAABJRU5ErkJggg==);
+}
+div.img-mnu>.sub>.btns>.m-btns>button#fw {
+    margin-left: 5px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAATpJREFUSEvt1U0rhUEUAODnLhWSSH6HEOEH2CiRRBJLCyU7CyU7CyVLJflIohT2srHwW/wE0dQh3I/3uu9778psZ+Y8nTNnZkpaPEot9vyDWRUfwXPWou/zeUo6hSvM4K5eNA94hNWAlnBaD5oHTPH3sBnQOg6y0Lxgir+F3YC2sVMLLQJM8ddwGNA+NqqhRYEp/gLOAjrGSiW0SDDFn8Q12nAbHfxW1LWoVrXRQPvxGOjr5+LfGb5ndVkD84s4byU4hJdqYAMJlG2ZwAPacYLlZp7hWGCd8fKkF+jHKLJLU7OkzLrizNLZlY2iwPRr3KMbF3EnKx5PEeBwYD24xHwzn7bBKGNvfFVzWV2XJ8OBwPrios9mYWk+D/iEcdzEa1KPlwvsiHs2XZcUi/Jk+Bfna+0/2FDZam36AIhgKB2L2fGLAAAAAElFTkSuQmCC);
+}
+
+div.img-mnu>.sub>.btns>.m-btns>button#bk[disabled], div.img-mnu>.sub>.btns>.m-btns>button#fw[disabled] {
+    border: solid 0.5px #5e5e5e!important;
+    background-color: #919191!important;
+    filter: brightness(100%)!important;
+    -webkit-filter: brightness(100%)!important;
+    -o-filter: brightness(100%)!important;
+    -ms-filter: brightness(100%)!important;
+    -moz-filter: brightness(100%)!important;
+}
+
+/* Cursor Menu (including the old Wallpaper Listbox :D) */
+
+menu[role=tablist] {
+    display: flex;
+    list-style-type: none;
+    margin: 2px 0 -2px;
+    padding-left: 3px;
+    position: relative;
+    text-indent: 0;
+}
+
+menu[role=tablist] > button {
+    border-radius: 0;
+    color: #222;
+    display: block;
+    min-width: unset;
+    padding: 2px 6px;
+    text-decoration: none;
+    height: 35px;
+    background: linear-gradient(180deg,#eee 45%,#ddd 0,#bbb);
+}
+
+.cur-mnu>h1 {
+    margin: 10px auto 0px auto;
+    font-size: 32px;
+    font-family: Segoe Ui Light;
+    font-weight: normal;
+    color: #0000ff;
+}
+
+.cur-mnu {
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.cur-mnu>hr {
+    width: 90%;
+    border-top: solid 0.5px #000;
+    border-bottom: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    margin: 4px auto 0px auto;
+}
+
+.listbox.revamped {
+    background: #fff;
+    border: solid 0.5px #000;
+    margin: 10px 5px 0px 5px;
+    width: auto;
+    font-size: 14px;
+    color: #000;
+    height: 275px;
+}
+
+div.listbox.revamped>.item {border-bottom: solid 0.5px #000;border-top: hidden;border-left: hidden;border-right: hidden;}
+
+div.listbox.revamped>.item.one:before,
+div.listbox.revamped>.item.two:before,
+div.listbox.revamped>.item.thr:before,
+div.listbox.revamped>.item.fou:before,
+div.listbox.revamped>.item.fiv:before,
+div.listbox.revamped>.item.six:before,
+div.listbox.revamped>.item.sev:before,
+div.listbox.revamped>.item.eig:before,
+div.listbox.revamped>.item.nin:before,
+div.listbox.revamped>.item.ten:before {
+    color: #828282;
+    font-size: 16px;
+    font-family: Segoe UI Black;
+    font-weight: normal;
+    margin: 0px 5px 0px 0px;
+}
+
+div.listbox.revamped>.item.one:before {
+    content: '1.';
+}
+div.listbox.revamped>.item.two:before {
+    content: '2.';
+}
+
+/* Out of Box Experience - OOBE Windows 8 Remix Application Style */
+
+.window.msoobe {
+    width: 100%!important;
+    height: 100%!important;
+    left: 0!important;
+    top: 0!important;
+    border: hidden!important;
+    z-index: 10000!important;
+    background: #444!important;
+    border-radius: 0px!important;
+}
+
+.window.msoobe>.title-bar {
+    background: transparent!important;
+}
+.window.msoobe>.title-bar>.title-bar-controls {
+  right: 7.5px!important;
+  position: fixed!important;
+}
+.window.msoobe>.title-bar>.title-bar-text {
+    display: none!important;
+}
+
+.window.build5112-aero-theme.msoobe>.title-bar>.title-bar-controls>button[aria-label="Close"] {
+    border-bottom-left-radius: 4px;
+    border-left: solid 0.5px #000;
+}
+
+.window.msoobe>.window-body {
+    border: hidden!important;
+    border-radius: 0px!important;
+    height: 100%!important;
+}
+
+.window.msoobe>.window-body>.window-body-filler {
+    border: hidden!important;
+    height: 100%!important;
+    background: transparent!important;
+    display: flex!important;
+}
+
+.window.msoobe>.window-body>.window-body-filler>div.msg {
+    left: 120px;
+    top: 160px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.window.msoobe>.window-body>.window-body-filler>div.msg>h1 {
+    font-family: Segoe UI Light;
+    font-size: 3.5em;
+    font-weight: normal;
+    color: white;
+    margin: 0;
+}
+
+.window.msoobe>.window-body>.window-body-filler>div.msg>p {
+    font-size: 1.25em;
+    color: #fff;
+    margin: 2px 0px 0px 0px;
+}
+
+.window.msoobe>.window-body>.window-body-filler>div.branding {
+    position: absolute;
+    width: 343.5px;
+    height: 54px;
+    bottom: 5px;
+    right: -35px;
+    background: center / contain no-repeat url(https://imgdb.net/storage/uploads/1640db29a10ba48f864a5a4491bbb477ed1fbf07033b0dfc8937f138c733ce23.png);
+    opacity: 35%;
+}
+
+.window.msoobe>.window-body>.window-body-filler>div.dev-note {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: 16px;
+    font-family: Segoe UI;
+    font-weight: normal;
+    text-align: left;
+    opacity: 35%;
+    color: white;
+}
