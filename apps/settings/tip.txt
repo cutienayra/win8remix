@@ -1,0 +1,5 @@
+tip: to change system settings use system.settings.setOpt('name_of_the_setting','value_of_setting');
+
+example: system.settings.setOpt('taskbar.autoHide',true);
+
+to get a setting use: system.settings.getOpt('name_of_the_setting','value to return if the setting doesn\'t exist') 
